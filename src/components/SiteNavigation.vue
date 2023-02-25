@@ -6,7 +6,7 @@
       <RouterLink :to="{ name: 'home' }">
         <div class="flex items-center gap-4">
           <i class="fa-regular fa-sun text-2xl"></i>
-          <p>Weather App</p>
+          <p class="text-2xl">Weather App</p>
         </div>
       </RouterLink>
       <div class="flex items-center gap-3 flex-1 justify-end">
@@ -16,6 +16,8 @@
         ></i>
         <i
           class="fa-solid fa-plus text-xl hover:text-weather-hover-color duration-150 cursor-pointer"
+          @click="addCity"
+          v-if="route.query.preview"
         ></i>
       </div>
 
@@ -45,12 +47,40 @@
 </template>
 
 <script setup>
+import { uid } from "uid";
+
 import { ref } from "vue";
-import { RouterLink } from "vue-router";
+import { RouterLink, useRoute, useRouter } from "vue-router";
 import BaseModal from "./BaseModal.vue";
 
 const modalActive = ref(null);
 const toggleModal = () => {
   modalActive.value = !modalActive.value;
+};
+const route = useRoute();
+const router = useRouter();
+const savedCities = ref([]);
+const addCity = () => {
+  if (localStorage.getItem("savedCities")) {
+    savedCities.value = JSON.parse(localStorage.getItem("savedCities"));
+  }
+
+  const locationObj = {
+    id: uid(),
+    state: route.params.state,
+    city: route.params.city,
+    coords: {
+      lat: route.query.lat,
+      lng: route.query.lng,
+    },
+  };
+
+  savedCities.value.push(locationObj);
+  localStorage.setItem("savedCities", JSON.stringify(savedCities.value));
+
+  let query = Object.assign({}, route.query);
+  delete query.preview;
+  query.id = locationObj.id;                         
+  router.replace({ query });
 };
 </script>
