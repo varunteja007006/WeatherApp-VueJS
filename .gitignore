@@ -28,3 +28,4 @@ coverage
 *.sw?
 .gitignore
 .env
+.weatherapp.code-workspace

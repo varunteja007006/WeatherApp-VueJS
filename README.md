@@ -12,34 +12,37 @@
     - Install Tailwind css
     - Tailwind config file - npx tailwindcss init -p
     - set template path 
+
 4. Create tailwind.css file in assets, instal three main bases in that file. base, components, utilities
+
 5. Customize tailwind in config file 
+
 6. import it into main.js/ main.ts
+
 7. tailwind.config.js 
-    --> setup where to find the content that uses the tailwind css
-    --> theme - extend - add css colors like primary, secondary etc...
-    --> theme - fontfamily, container props, flex props  
+    - setup where to find the content that uses the tailwind css
+    - theme - extend - add css colors like primary, secondary etc...
+    - theme - fontfamily, container props, flex props  
+
 8. For navigation use RouterLink
+
 9. Use of reusable components, ref , emit, Teleport tag
+
 10. V- Model for input tag (Search bar)
+
 11. Creating Suspense tag when loading a component which has async data fetch (Lesson 8)
+
 12. Create a City view component (Lesson 9)
+
 13. Add city to local Storage (Lesson 10)
+
 14. Retreive and display cities from local storage (Lesson 11)
-15. 
-16. Placeholder or spinner for data loading on the page (Lesson 12).
-17. 
-18. use beforeEach for router to set the titles dynamically for the webpages.
-19. Deploy to netlify
 
+15. Placeholder or spinner for data loading on the page (Lesson 12).
 
+16. use beforeEach for router to set the titles dynamically for the webpages.
 
-
-
-
-
-
-
+17. Deploy to netlify
 
 
 
