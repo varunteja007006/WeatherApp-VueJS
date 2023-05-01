@@ -1,5 +1,10 @@
 # WeatherApp-VueJS Notes
 
+Hi,
+
+The app is built as a part of learning and understanding Vue JS framework.
+Playlist I followed - https://www.youtube.com/playlist?list=PL4cUxeGkcC9hfoy8vFQ5tbXO3vY0xhhUZ
+
 1. Initailly create vue app 
     - npm init @vue@latest
     - Choose the proper options
@@ -69,3 +74,5 @@ npm run dev
 ```sh
 npm run build
 ```
+
+Thank you for checking out my repo.
