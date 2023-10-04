@@ -17,8 +17,8 @@ Playlist I followed - https://www.youtube.com/playlist?list=PL4cUxeGkcC9hfoy8vFQ
     - npm init @vue@latest
     - Choose the vue option
     - cd vue-project
-          1. npm install
-          2. npm run dev 
+    - npm install
+    - npm run dev 
 
 2. After Vue app created delete the unnescessary files
     assets / icons / App.vue / components and etc..
