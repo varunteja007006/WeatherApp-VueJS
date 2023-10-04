@@ -6,18 +6,22 @@ Introducing the all new WeatherApp. Yeah that's right, this app will give you we
 
 This app is built using Vue JS 💚.
 
-Hi there,
+
+# About the project
 
 The app is built as a part of learning and understanding Vue JS framework.
+
 Playlist I followed - https://www.youtube.com/playlist?list=PL4cUxeGkcC9hfoy8vFQ5tbXO3vY0xhhUZ
 
 1. Initailly create vue app 
     - npm init @vue@latest
-    - Choose the proper options
-    - cd vue-project --> npm install --> npm run dev #to run the project on local host   
+    - Choose the vue option
+    - cd vue-project
+          1. npm install
+          2. npm run dev 
 
 2. After Vue app created delete the unnescessary files
-    assets / icons / App.vue / components / etc....
+    assets / icons / App.vue / components and etc..
 
 3. Setup tailwind css
     - Install Tailwind css
