@@ -1,6 +1,12 @@
-# WeatherApp-VueJS Notes
+# WeatherApp
 
-Hi,
+Is it good for laundry today👕 or maybe help you from getting drenched in the rain ⛈️. How you say?? 
+
+Introducing the all new WeatherApp. Yeah that's right, this app will give you weather updates saves your day 🌈. Keeps you prepared against the bad weather ☂️.
+
+This app is built using Vue JS 💚.
+
+Hi there,
 
 The app is built as a part of learning and understanding Vue JS framework.
 Playlist I followed - https://www.youtube.com/playlist?list=PL4cUxeGkcC9hfoy8vFQ5tbXO3vY0xhhUZ
